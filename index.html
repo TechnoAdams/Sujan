@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="neon-text"></div>
+
+    <video id="videoPlayer" controls>
+      <source src="22.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="controls">
+      <button onclick="togglePlay()">▶ / ⏸</button>
+      <input type="range" id="timeline" min="0" value="0" />
+    </div>
+
+    <div class="menu">
+      <button class="dots" onclick="toggleMenu()">⋮</button>
+      <div class="dropdown" id="dropdownMenu">
+        <button onclick="playNextVideo()">Next Video</button>
+        <button onclick="playNextVideo2()">Next Video 2</button>
+        <button onclick="playMainEpisodeVideo2()">Mainepisodevideo2</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
